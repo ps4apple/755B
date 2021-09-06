@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest"><head>
+<title>PS4 APPLE 755B</title>
+<style>
+html, body {
+background-image: url('base.png');
+background-attachment: fixed;
+background-size:100%;
+background-repeat:no-repeat;
+background-color: #fffff;
+color:white;
+margin-top: 0px;
+margin-left: 0px;
+margin-right: 0px;
+overflow: hidden;
+}
+h1 {
+text-shadow: 0.1em 0.1em 0.2em black;
+font-size:20px;
+text-align:center;
+color:#ffffff;
+}
+.btn {
+width: 362px;
+height: 59px;
+padding-top: 10px;
+padding-bottom: 13px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+margin-top: 15px;
+margin-bottom: 5px;
+margin-left: 15px;
+margin-right: 5px;
+border-bottom-width: 0px;
+border-right-width: 0px;
+border-top-width: 0px;
+border-left-width: 0px;
+-webkit-transition-duration: 0.4s;
+transition-duration: 0.4s;
+cursor: pointer;
+}
+.btn-main {
+background-color: #778899;
+color: #ffffff;
+border-radius: 40px;
+}
+.btn-main:hover {
+box-shadow: 0 5px 50px 0 #AE9EFF;
+background-color: #AE9EFF;
+color: white;
+    border-radius: 10px;
+}
+</style>
+<script>
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));document.getElementById="display:none";window.msgs.innerHTML="Installing Cache: " + Percent + "%";}
+function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cache Installation Completed ✔";},1000);setTimeout(function(){window.msgs.innerHTML="Exit the browser, Disable the internet and enter again";},3000);}window.applicationCache.addEventListener("Progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+document.cookie = 'kex=1';
+</script>
+</head>
+<h1 id=msgs>BASE - Alemaster77.github.io/7.XX (MASTERHACK)</h1>
+<br>
+<h1 style="font-size:60px;text-align:center;color:#ffffff;">PS4 APPLE - 7.55B</h1>
+<div style="text-align:center">
+<button class="btn btn-main" onmouseover="mainpayload1()" onmouseout="pagetitle()" onclick=load_goldhen755()> GOLDHEN 1.1 </button>
+<br>
+<h1 style="font-size:30px;text-align:center;color:#ffffff">Useful Loads</h1>
+<button class="btn btn-main" onmouseover="goldhen()" onmouseout="pagetitle()" onclick=load_goldhen()> GOLDHEN 1.0 </button>
+<button class="btn btn-main" onmouseover="dumper()" onmouseout="pagetitle()" onclick=load_dumper()> DUMPER </button>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<br>
+<br>
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<br>
+<br>
+<script>
+function mainpayload1(){
+document.getElementById("msgs").innerHTML = "GOLDHEN v1.1";
+}
+function goldhen(){
+document.getElementById("msgs").innerHTML = "GOLDHEN v1.0";
+}
+function dumper(){
+document.getElementById("msgs").innerHTML = "DUMP YOUR GAMES";
+}
+function pagetitle(){
+document.getElementById("msgs").innerHTML = "BASE - Alemaster77.github.io/7.XX (MASTERHACK)";
+}
+function load_goldhen755(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=goldhen755.js';
+        link.click();
+}
+function load_goldhen(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=goldhen.js';
+        link.click();
+}
+function load_dumper(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload.html#f=app-dumper.js';
+        link.click();
+}
+
+function load_morepls(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'more-plds.html';
+        link.click();
+}
+</script>
+</body>
+</html>
